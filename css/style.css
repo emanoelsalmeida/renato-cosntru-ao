@@ -5,7 +5,7 @@
 }
 
 body{font-size: 100%;}
-h3,p,h1,h{text-align: center;}
+h3,p,h1{text-align: center;}
 
 .box-header{display: flex;justify-content: space-between;align-items: center;background-color: #ffffff;
     margin: 0 3vw;
@@ -20,12 +20,11 @@ header ul li a{text-decoration: none;color: #000000;font-size: 1.4em;font-weight
  }
  header h1{ text-align: center; padding: 30px 0; color: white;font-weight: 400;font-family: 'Cinzel', serif; font-weight: 700;
  }
-
- label #sign-one,  label #sign-two{font-size: 1em; background-color: #000000;float: right; margin-right: 30px;cursor: pointer; display: none; z-index: 13;
+ label #sign-one,  label #sign-two{font-size: 1em; background-color: #000000;float: right;cursor: pointer; display: none; z-index: 13;
  }
- #res-menu{display: none;color: #000000;
+ #res-menu{display: none;color: #000000;color: blue;
  }
- .fa-bars{display: flex;align-items: center;background-color: #000000
+ .fa-bars{display: flex;align-items: center;background-color: #000000;color: blue;
  }
 
 .inicial{background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url(/Images/internal-house.jpeg);
@@ -77,15 +76,13 @@ header ul li a{text-decoration: none;color: #000000;font-size: 1.4em;font-weight
         font-size: 1.8em;
         text-align: center;
     }
-    .inicial
-
-    .box-header{ background-color:blue;align-content: center; justify-content: space-between; 
-        position: fixed;width: 100%;height: 11vh; margin: 0; }
-    .box-header img{width: 20vw; }
+    .box-header{align-content: center; justify-content: space-between; 
+        position: fixed;width: 100%;margin: 0; height: 10vh;}
+    .box-header img{width: 30vw; }
     
     header ul li a{text-decoration: none;color: white;font-size: 1em;font-weight: 200;display: block;
          margin: 0 auto;}
-    label #sign-one{ display: block;margin-left: 30px;}
+    label #sign-one{ display: block;}
     nav ul{position: fixed; width: 100%;height: 40vh;background-color: #030303;top:50px;left:-100%;text-align: center;transition: .5s; z-index: 10; margin-top: 20px;}
     nav ul li{display: block;margin: 40px 0;line-height: 10px;}
     
@@ -103,5 +100,4 @@ header ul li a{text-decoration: none;color: #000000;font-size: 1.4em;font-weight
     .whatsapp a img{position: fixed;top: 80vh;right: 5.5%; width: 12vw;
     }
     footer{width: 80%;}
-
     }
