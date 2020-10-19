@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{font-size: 100%;}
+h3,p,h1,h{text-align: center;}
+
+.box-header{display: flex;justify-content: space-between;align-items: center;background-color: #ffffff;
+    margin: 0 3vw;
+}
+.box-header img{width: 5vw;
+}
+header ul { list-style: none;text-align: center;
+}
+header ul li {display: inline-block;margin: 0px 3vw 15px 0px;font-family: 'Montserrat', sans-serif;color: white;
+ }
+header ul li a{text-decoration: none;color: #000000;font-size: 1.4em;font-weight: 400;
+ }
+ header h1{ text-align: center; padding: 30px 0; color: white;font-weight: 400;font-family: 'Cinzel', serif; font-weight: 700;
+ }
+
+ label #sign-one,  label #sign-two{font-size: 1em; background-color: #000000;float: right; margin-right: 30px;cursor: pointer; display: none; z-index: 13;
+ }
+ #res-menu{display: none;color: #000000;
+ }
+ .fa-bars{display: flex;align-items: center;background-color: #000000
+ }
+
+.inicial{background-image: linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)), url(/Images/internal-house.jpeg);
+    background-size: cover;background-position: center center;height: 100vh;display: flex;align-items: center;
+    justify-content: center;flex-direction: column;}
+.inicial h1{color: #ffffff;text-transform: uppercase;margin: 3vh 0;font-weight: 700;} 
+.inicial h3{color: #ffffff;text-transform: uppercase;margin: 3vh 0; font-weight: 400;}
+
+/* start Button sctucture*/
+.button{background-color:transparent;color:#ffffff;text-align: center;width: 20vw;height: 8vh;
+    font-size: 1.2em;cursor: pointer; text-transform: uppercase;
+    border: 1px solid #ffffff ; font-weight: 700;display: flex;align-items: center;justify-content: center;margin: 3vh 0;}
+ .button a{ color: #ffffff;text-decoration: none;font-weight: 400;}
+ .button a:hover{color: #ffffff;text-decoration: none;}
+/* end Button sctucture*/
+
+.p1 h1{padding: 5vh 0;}
+.p1-box{display: grid;grid-template-columns: 25% 25% 25%;justify-content: center;
+     align-items: flex-start;grid-gap: 5vh;padding: 5vh;}
+.p1-item{height: 70vh;background-color: #f6f5f5;display: flex;align-items: center;justify-content:flex-start;flex-direction: column;}
+.p1-item img{width: 23vw; height: 25vh; display: block;margin: 0 auto;margin-top: 5vh;}
+.p1-item h3{color: #000000;font-weight: 400; font-size: 1.3em;width: 90%;display: block;margin: 3vh auto;}
+.p1-item .button {border: 1px solid #000000;}
+.p1-item a{color: #000000;}
+
+.p2{background-color: #373a40;height: 50vh;display: flex;justify-content: center;align-items: center;}
+
+.p3{height: 30vh;display: flex;justify-content: center;align-items: center;}
+.p3-box{display: flex;justify-content: center;align-items: center;}
+.p3-item{margin: 0 5vw;}
+.p3-item h4{font-size: 1.5em;text-align: center;}
+.p3-item{text-align: left;align-self: flex-start;}
+
+.footer p{
+    text-align: center;
+    padding: 15px 0;
+   
+}
+.footer p a{
+    color:white;
+    text-decoration: none;
+    text-align: center;
+}
+.whatsapp a img{ position: fixed; top: 81vh;right: 2.5%;width: 5vw;}
+
+@media screen and (max-width:800px){
+
+    header h1{
+        font-size: 1.8em;
+        text-align: center;
+    }
+    .inicial
+
+    .box-header{ background-color:blue;align-content: center; justify-content: space-between; 
+        position: fixed;width: 100%;height: 11vh; margin: 0; }
+    .box-header img{width: 20vw; }
+    
+    header ul li a{text-decoration: none;color: white;font-size: 1em;font-weight: 200;display: block;
+         margin: 0 auto;}
+    label #sign-one{ display: block;margin-left: 30px;}
+    nav ul{position: fixed; width: 100%;height: 40vh;background-color: #030303;top:50px;left:-100%;text-align: center;transition: .5s; z-index: 10; margin-top: 20px;}
+    nav ul li{display: block;margin: 40px 0;line-height: 10px;}
+    
+    label #sign-one,  label #sign-two{position: fixed; z-index: 11;}
+    #res-menu:checked ~ ul{ left: 0;}
+    #res-menu:checked ~ #sign-one{display: none;}
+    #res-menu:checked ~ #sign-two{display: block;}
+    
+    .button{width: 60vw;}
+    .p1 h1{text-align: center;}
+    .p1-box{grid-template-columns: 80%;padding: 0;justify-content: center;}
+    .p3-box{flex-direction: column;padding: 5vh 0;}
+    .p1-item img{width: 60vw;height: auto;}
+    
+    .whatsapp a img{position: fixed;top: 80vh;right: 5.5%; width: 12vw;
+    }
+    footer{width: 80%;}
+
+    }
